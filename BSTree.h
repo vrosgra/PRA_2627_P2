@@ -26,7 +26,7 @@ class BSTree {
             if (n == nullptr)
                 return new BSNode<T>(e);
             else if (n->elem == e)
-                throw std::runtime_error("Element duplicated");
+                throw std::runtime_error("Duplicated element");
             else if (n->elem < e)
                 n->right = insert(n->right, e);
             else
